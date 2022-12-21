@@ -54,14 +54,10 @@ function renderTemplate(e) {
     countryRefsTemplate = refs.countyList;
   }
 
-  drawTemplate(countryRefsTemplate, countryTemplate);
+  countryRefsTemplate.innerHTML = countryTemplate
 }
 
 function clearTemplate() {
   refs.countyInfo.innerHTML = '';
   refs.countyList.innerHTML = '';
-}
-
-function drawTemplate(refs, template) {
-  refs.innerHTML = template;
 }
